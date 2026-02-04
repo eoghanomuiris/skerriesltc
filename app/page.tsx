@@ -9,10 +9,10 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative h-[500px] md:h-[600px] bg-cover bg-bottom flex items-center justify-center" style={{ backgroundImage: "url('/images/hero-banner.png')" }}>
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.8)' }}>
             Welcome to Skerries Lawn Tennis Club
           </h1>
-          <p className="text-xl md:text-2xl text-white mb-8">
+          <p className="text-xl md:text-2xl text-white mb-8" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.8)' }}>
             Your Community Tennis Club in Skerries, Co. Dublin
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
