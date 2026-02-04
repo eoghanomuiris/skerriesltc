@@ -77,7 +77,7 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-[#F5F5F5] hover:text-[#006D3B] transition-colors"
+                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-[#F5F5F5] hover:text-[#006D3B] transition-colors whitespace-nowrap"
                 >
                   {link.label}
                 </Link>
@@ -92,7 +92,7 @@ export default function Header() {
               </a>
               <Link
                 href="/membership"
-                className="rounded-md bg-[#B7D433] px-4 py-2 text-sm font-semibold text-white hover:bg-[#a0bd2d] transition-colors"
+                className="rounded-md bg-[#B7D433] px-4 py-2 text-sm font-semibold text-white hover:bg-[#a0bd2d] transition-colors whitespace-nowrap"
               >
                 Join Now
               </Link>
@@ -175,7 +175,7 @@ export default function Header() {
             </a>
             <Link
               href="/membership"
-              className="block rounded-md bg-[#B7D433] px-3 py-2 text-base font-semibold text-white hover:bg-[#a0bd2d] text-center transition-colors"
+              className="block rounded-md bg-[#B7D433] px-3 py-2 text-base font-semibold text-white hover:bg-[#a0bd2d] text-center transition-colors whitespace-nowrap"
               onClick={() => setMobileMenuOpen(false)}
             >
               Join Now

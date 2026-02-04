@@ -53,18 +53,6 @@ export default function CoachingPage() {
                       {coach.phone}
                     </a>
                   </p>
-                  {coach.specialties && (
-                    <div className="space-y-1">
-                      {coach.specialties.map((specialty, index) => (
-                        <span
-                          key={index}
-                          className="inline-block text-xs bg-[#F5F5F5] text-gray-700 px-2 py-1 rounded mr-1 mb-1"
-                        >
-                          {specialty}
-                        </span>
-                      ))}
-                    </div>
-                  )}
                 </div>
               </div>
               </FadeIn>
