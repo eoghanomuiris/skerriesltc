@@ -1,3 +1,5 @@
+import FadeIn from '@/components/FadeIn';
+
 export default function MembershipPage() {
   return (
     <div>
@@ -39,7 +41,8 @@ export default function MembershipPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Adult Single */}
-            <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-[#006D3B] hover:shadow-xl transition-shadow">
+            <FadeIn delay={0}>
+            <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-[#006D3B] hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
               <h3 className="text-2xl font-bold text-[#006D3B] mb-2">Adult Single</h3>
               <div className="text-4xl font-bold text-[#B7D433] mb-4">€160</div>
               <p className="text-gray-600 mb-4">Per year</p>
@@ -64,9 +67,11 @@ export default function MembershipPage() {
                 </li>
               </ul>
             </div>
+            </FadeIn>
 
             {/* Junior */}
-            <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-[#006D3B] hover:shadow-xl transition-shadow">
+            <FadeIn delay={100}>
+            <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-[#006D3B] hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
               <h3 className="text-2xl font-bold text-[#006D3B] mb-2">Junior</h3>
               <div className="text-4xl font-bold text-[#B7D433] mb-4">€85</div>
               <p className="text-gray-600 mb-4">Per year</p>
@@ -91,9 +96,11 @@ export default function MembershipPage() {
                 </li>
               </ul>
             </div>
+            </FadeIn>
 
             {/* Student */}
-            <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-[#006D3B] hover:shadow-xl transition-shadow">
+            <FadeIn delay={200}>
+            <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-[#006D3B] hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
               <h3 className="text-2xl font-bold text-[#006D3B] mb-2">Student</h3>
               <div className="text-4xl font-bold text-[#B7D433] mb-4">€80</div>
               <p className="text-gray-600 mb-4">Per year</p>
@@ -118,9 +125,11 @@ export default function MembershipPage() {
                 </li>
               </ul>
             </div>
+            </FadeIn>
 
             {/* Family */}
-            <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-[#006D3B] hover:shadow-xl transition-shadow">
+            <FadeIn delay={300}>
+            <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-[#006D3B] hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
               <h3 className="text-2xl font-bold text-[#006D3B] mb-2">Family</h3>
               <div className="text-4xl font-bold text-[#B7D433] mb-4">€270</div>
               <p className="text-gray-600 mb-4">Per year</p>
@@ -145,6 +154,7 @@ export default function MembershipPage() {
                 </li>
               </ul>
             </div>
+            </FadeIn>
           </div>
         </div>
       </section>

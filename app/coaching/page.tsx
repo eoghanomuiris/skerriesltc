@@ -1,5 +1,6 @@
 import { coaches } from '@/lib/data/coaches';
 import Link from 'next/link';
+import FadeIn from '@/components/FadeIn';
 
 export default function CoachingPage() {
   return (
@@ -37,8 +38,9 @@ export default function CoachingPage() {
             Our Coaches
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {coaches.map((coach) => (
-              <div key={coach.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+            {coaches.map((coach, index) => (
+              <FadeIn key={coach.id} delay={index * 100}>
+              <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
                 <div className="h-48 bg-gradient-to-br from-[#006D3B] to-[#B7D433]"></div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-[#006D3B] mb-2">{coach.name}</h3>
@@ -65,6 +67,7 @@ export default function CoachingPage() {
                   )}
                 </div>
               </div>
+              </FadeIn>
             ))}
           </div>
         </div>
